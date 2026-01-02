@@ -18,5 +18,4 @@ public class XForceMainMenu {
 
         LOGGER.info("XForceMainMenu is on."); // Print success message
     }
-
 }

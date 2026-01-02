@@ -1,3 +1,4 @@
 {
-  "xforcemainmenu.button.back_from_disconnect": "В главное меню"
+  "xforcemainmenu.button.back_from_disconnect": "В главное меню",
+  "xforcemainmenu.disconnect.connection_refused": "&cСервер выключен"
 }

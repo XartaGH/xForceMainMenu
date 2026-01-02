@@ -3,10 +3,10 @@ package me.xarta.xforcemainmenu.event;
 import me.xarta.xforcemainmenu.XForceMainMenu;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.screens.ConnectScreen;
 import net.minecraft.client.gui.screens.DisconnectedScreen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen;
-import net.minecraft.client.gui.screens.ConnectScreen;
 import net.minecraft.network.chat.Component;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -51,9 +51,9 @@ public final class ClientEvents {
                         .filter(Button.class::isInstance)
                         .map(Button.class::cast)
                         .findFirst()
-                        .ifPresent(btn -> btn.setMessage(Component.translatable(
-                                "xforcemainmenu.button.back_from_disconnect"
-                        )));
+                        .ifPresent(btn -> btn.setMessage(
+                                Component.translatable("xforcemainmenu.button.back_from_disconnect")
+                        ));
                 patchedDisconnectButton = true;
                 lastScreenHash = currHash;
             }

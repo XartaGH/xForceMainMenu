@@ -1,4 +1,5 @@
 
 {
-  "xforcemainmenu.button.back_from_disconnect": "Back to main menu"
+  "xforcemainmenu.button.back_from_disconnect": "Back to main menu",
+  "xforcemainmenu.disconnect.connection_refused": "&cUnable to connect: server refused the connection"
 }
